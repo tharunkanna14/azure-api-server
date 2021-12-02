@@ -33,7 +33,7 @@ jobs:
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
       - name: Run Tests
-        run: python manage.py createsuperuser
+        run: winpty python manage.py createsuperuser
       
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
