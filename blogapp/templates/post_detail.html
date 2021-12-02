@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+{% load url_target_blank %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
+        <p class=" text-muted">{{ post.author }} | {{ post.published_date }}</p>
+        <p class="card-text ">{{ post.text|linebreaks | safe|urlize|url_target_blank }}</p>
+        <br>
+        <a href="/" class="btn btn-danger"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Back</a>
+      </div>
+    </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  </div>
+</div>
+
+{% endblock content %} 
