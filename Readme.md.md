@@ -274,7 +274,7 @@ If you are new to django, there’s a db.sqlite file where all the data is being
 
 ##### **Results**
 
-The CRUD operations are reflected in the main website i.e django central, where you get to see the HTTP methods performed as a flash card. Refresh the site once you have performed any operation using the /api/v1/posts/ page or Postman to see the changes.
+The CRUD operations are reflected in the main website https://api-challenge-server.azurewebsites.net/ i.e django central, where you get to see the HTTP methods performed as a flash card. Refresh the site once you have performed any operation using the /api/v1/posts/ page or Postman to see the changes.
 
 ![](Aspose.Words.1771abb9-d7da-4995-a57f-6220be4ad572.008.png)
 
